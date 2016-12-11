@@ -1,9 +1,444 @@
-<navbar></navbar>
-<header>
-  <hero></hero>
-</header>
-<main>
-  <div>
-    <h1>Found in {{ $ctrl.name }}.html</h1>
+<div style="position:relative">
+  <div class="carousel slide insideslid">
+    <div uib-carousel active="active" interval="3000">
+      <div uib-slide ng-repeat="(index, slide) in $ctrl.slides track by $index" index="index">
+        <img ng-src="{{slide.image}}" class="image-slider">
+        <div class="carousel-caption txtbanner">
+          <h1>{{slide.text}}</h1>
+        </div>
+      </div>
+    </div>
   </div>
-</main>
+  <div class="search-box">
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4 text-center">
+        <search-box></search-box>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- HIGHLIGHT TRAVEL -->
+<section id="travel">
+  <div class="col-md-12 tabtravel">
+    <div class="container">
+      <h1 class="thaih2">
+        HIGHLIGHT TRAVEL</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="col-md-12 col-xs-12 highlighttravel">
+          <a href="http://www.nationmultimedia.com/zogzag77/travel.html"><img src=".././app/images/pic-travel1.jpg" class="img-responsive bw pic" alt=""></a>
+        </div>
+        <div class="col-md-6  col-xs-12 spacebox">
+          <a href="http://www.nationmultimedia.com/zogzag77/travel.html"><img src=".././app/images/travel1-n.jpg" class="img-responsive bw pic" alt=""></a>
+        </div>
+        <div class="col-md-6 col-xs-12 spacebox">
+          <a href="http://www.nationmultimedia.com/zogzag77/travel.html"><img src=".././app/images/travel1-n.jpg" class="img-responsive bw pic" alt=""></a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 pull-right spacetop">
+        <div class="col-md-12 col-sm-12 col-xs-12 space">
+          <a href="http://www.nationmultimedia.com/zogzag77/#"><img src=".././app/images/banner-travel1.jpg" class="img-responsive bw pic" alt=""></a>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 space">
+          <a href="http://www.nationmultimedia.com/zogzag77/#"><img src=".././app/images/banner-travel2.jpg" class="img-responsive bw pic" alt=""></a>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 space">
+          <a href="http://www.nationmultimedia.com/zogzag77/#">
+            <img src=".././app/images/banner-travel3.jpg" class="img-responsive bw pic" alt=""></a>
+        </div>
+        <div class="col-md-12 col-sm-12 col-xs-12 space">
+          <a href="http://www.nationmultimedia.com/zogzag77/#"><img src=".././app/images/banner-travel4.jpg" class="img-responsive bw pic" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+<!-- end-HIGHLIGHT TRAVEL -->
+<!-- HIGHLIGHT RESTAURANT -->
+<section id="restaurent">
+
+  <div class="col-md-12 tabresturent">
+    <div class="container">
+
+      <h1 class="thaih2">
+        HIGHLIGHT RESTAURANT</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="col-md-12 highlighttravel">
+          <a href="restaurant.html"><img src="./app/images/pic-restaurent.jpg" class="img-responsive bw pic" alt=""></a>
+          <div class="desc">
+            <p class="desc_content">
+              <a href="restaurant.html">ข้าวซอยอินทนนท์ กาดฝรั่ง</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6  col-xs-12 spacebox">
+          <a href="restaurant.html"><img src="./app/images/food1.jpg" class="img-responsive bw pic" alt=""></a>
+          <div class="desc">
+            <p class="desc_content">
+              <a href="restaurant.html">ข้าวซอยอินทนนท์ กาดฝรั่ง</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12 spacebox">
+          <a href="restaurant.html">
+            <img src="./app/images/food2.jpg" class="img-responsive bw pic" alt=""></a>
+          <div class="desc">
+            <p class="desc_content">
+              <a href="restaurant.html">ข้าวซอยอินทนนท์ กาดฝรั่ง</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 pull-right spacetop">
+        <div class="col-md-12 col-sm-12 col-xs-12">
+          <a href="#"><img src="./app/images/banner-zogzag.jpg" class="img-responsive bw pic"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="banner-big">
+  <div class="container">
+    <div class="row ">
+      <div class="col-md-12">
+        <a href="#"><img src="./app/images/banner-travel-1070.jpg" class="img-responsive bw pic"></a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end-HIGHLIGHT RESTAURANT -->
+<!--  HIGHLIGHT DRINK -->
+<section id="drink">
+  <div class="col-md-12 tabdrink">
+    <div class="container">
+      <h1 class="thaih2">
+        HIGHLIGHT DRINK</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="col-md-12 highlighttravel">
+          <a href="bar-detail.html"><img src="./app/images/banner-drink.jpg" class="img-responsive bw pic" alt=""></a>
+          <div class="desc">
+            <p class="desc_content">
+              <a href="bar-detail.html">ข้าวซอยอินทนนท์ กาดฝรั่ง</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6  col-xs-12 spacebox">
+          <a href="bar-detail.html"><img src="./app/images/drink2.jpg" class="img-responsive bw pic" alt=""></a>
+          <div class="desc">
+            <p class="desc_content">
+              <a href="bar-detail.html">ข้าวซอยอินทนนท์ กาดฝรั่ง</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6 col-xs-12 spacebox">
+          <a href="bar-detail.html"><img src="./app/images/drink3.jpg" width="100%" class="img-responsive bw pic" alt=""></a>
+          <div class="desc">
+            <p class="desc_content">
+              <a href="bar-detail.html">ข้าวซอยอินทนนท์ กาดฝรั่ง</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12 pull-right spacetop">
+        <div class="col-md-12 col-sm-12">
+          <a href="#"><img src="./app/images/banner-drink2.jpg" class="img-responsive bw pic"></a>
+        </div>
+
+      </div>
+      <div class="col-md-8">
+        <div class="col-md-12 col-xs-12 spacebox">
+          <div class="embed-responsive embed-responsive-16by9 ">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/6P-5YyY-vss?rel=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="col-md-4 ">
+        <div class="col-md-12 col-xs-12 spacebox">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/6P-5YyY-vss?rel=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="col-md-12 col-xs-12 spacebox">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/6P-5YyY-vss?rel=0" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!--  end-HIGHLIGHT DRINK -->
+<!--  NEWS EVENT -->
+<section id="news">
+
+  <div class="col-md-12 tabnews">
+    <div class="container">
+      <h1 class="thaih2">
+        NEWS & EVENT</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 col-xs-12 highlighttravel">
+        <div class="col-xs-12">
+          <a href="#">
+            <img src="./app/images/news1.jpg" class="img-responsive pic" alt="Image">
+          </a>
+          <div class="desc">
+            <h4>Media heading</h4>
+
+          </div>
+
+        </div>
+        <p class="titlenew">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+        </p>
+        <p class="more">
+          <a href="news-detail.html">More
+            <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></a>
+          </span>
+        </p>
+
+      </div>
+
+      <div class="col-md-4 col-xs-12 spacetopnews">
+        <div class="col-xs-12">
+          <a href="#">
+            <img src="./app/images/news2.png" class="img-responsive pic" alt="Image">
+          </a>
+          <div class="desc">
+            <h4>Media heading</h4>
+
+          </div>
+
+        </div>
+        <p class="titlenew">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+        </p>
+        <p class="more">
+          <a href="news-detail.html">More
+            <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></a>
+          </span>
+        </p>
+
+      </div>
+
+      <div class="col-md-4 col-xs-12 spacetopnews">
+        <div class="col-xs-12">
+          <a href="#">
+            <img src="./app/images/news3.png" class="img-responsive pic" alt="Image">
+          </a>
+          <div class="desc">
+            <h4>Media heading</h4>
+
+          </div>
+
+        </div>
+        <p class="titlenew">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+          dolor in reprehenderit in
+
+        </p>
+        <p class="more">
+          <a href="news-detail.html">More
+            <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></a>
+          </span>
+        </p>
+
+      </div>
+    </div>
+
+    <div class="col-md-4 col-xs-12 spacetopnews">
+      <div class="col-xs-12">
+        <a href="#">
+          <img src="./app/images/news4.png" class="img-responsive pic" alt="Image">
+        </a>
+        <div class="desc">
+          <h4>Media heading</h4>
+
+        </div>
+
+      </div>
+      <p class="titlenew">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate
+
+      </p>
+      <p class="more">
+        <a href="news-detail.html">More
+          <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></a>
+        </span>
+      </p>
+
+    </div>
+
+    <div class="col-md-4 col-xs-12 spacetopnews">
+      <div class="col-xs-12">
+        <a href="#">
+          <img src="./app/images/news5.png" class="img-responsive pic" alt="Image">
+        </a>
+        <div class="desc">
+          <h4>Media heading</h4>
+
+        </div>
+
+      </div>
+      <p class="titlenew">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      </p>
+      <p class="more">
+        <a href="news-detail.html">More
+          <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></a>
+        </span>
+      </p>
+
+    </div>
+    <div class="col-md-4 col-xs-12 spacetopnews">
+      <div class="col-xs-12">
+        <a href="news-detail.html">
+          <img src="./app/images/news6.png" class="img-responsive pic" alt="Image">
+        </a>
+        <div class="desc">
+          <h4>Media heading</h4>
+
+        </div>
+
+      </div>
+      <p class="titlenew">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      </p>
+      <p class="more">
+        <a href="news-detail.html">More
+          <span class="glyphicon glyphicon-triangle-right" aria-hidden="true"></a>
+        </span>
+      </p>
+
+    </div>
+  </div>
+</div>
+
+</section>
+<!-- END-NEWS EVENT -->
+<!-- HIGHLIGHT ZOGZAG -->
+<section id="zogzag">
+
+<div class="col-md-12 tabzogzag">
+  <div class="container">
+    <h1 class="thaih2">
+      HIGHLIGHT ZOGZAG</h1>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4  text-center">
+      <div class="tittlezogzag boxpic1">
+        <img src="./app/images/icon-travel.png" class="spacebox1">
+        สถานที่ท่องเที่ยว
+        <img src="./app/images/pic-travel.png" class="img-responsive bw pic" alt="Image">
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </p>
+        <a ui-sref="travel">
+          <button type="button" class="btn btn-default">More</button>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 text-center">
+      <div class="tittlezogzag boxpic2">
+        <img src="./app/images/icon-food.png" class="spacebox1">
+        ร้านอาหาร
+        <img src="./app/images/pic-food.png" class="img-responsive bw pic" alt="Image">
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </p>
+        <a ui-sref="restaurant">
+          <button type="button" class="btn btn-default">More</button>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 text-center">
+      <div class="tittlezogzag  boxpic3">
+        <img src="./app/images/icon-bar.png" class="spacebox1 ">
+        บาร์เครื่องดื่ม
+
+        <img src="./app/images/pic-bar.png" class="img-responsive bw pic" alt="Image">
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </p>
+        <a ui-sref="bar">
+          <button type="button" class="btn btn-default">More</button>
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4  text-center">
+      <div class="tittlezogzag boxpic4">
+        <img src="./app/images/icon-otop.png" class="spacebox1">
+        สินค้า
+
+        <img src="./app/images/pic-otop.png" class="img-responsive bw pic" alt="Image">
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </p>
+        <a ui-sref="otop">
+          <button type="button" class="btn btn-default">More</button>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 text-center">
+      <div class="tittlezogzag  boxpic5">
+        <img src="./app/images/icon-hotel.png" class="spacebox1">
+        โรงแรมที่พัก
+
+        <img src="./app/images/pic-hotel.png" class="img-responsive bw pic" alt="Image">
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </p>
+        <a ui-sref="hotel">
+          <button type="button" class="btn btn-default">More</button>
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4 text-center">
+      <div class="tittlezogzag  boxpic6">
+        <img src="./app/images/icon-gif.png" class="spacebox1 ">
+        โปรโมชั่นและส่วนลด
+
+        <img src="./app/images/pic-gif.png" class="img-responsive bw pic" alt="Image">
+        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        </p>
+        <a ui-sref="promotion">
+          <button type="button" class="btn btn-default">More</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<!-- END-HIGHLIGHT ZOGZAG -->
