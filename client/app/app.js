@@ -4,7 +4,7 @@ import 'normalize.css';
 
 import 'bootstrap-loader';
 import 'font-awesome-loader';
-
+import _ from 'lodash';
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import ngSanitize from 'angular-sanitize';
@@ -17,8 +17,8 @@ import AppComponent from './app.component';
 import angularUi from 'angular-ui-bootstrap';
 import uiSelect from 'ui-select'
 import ngMap from 'ngmap'
-
-angular.module('app', [ngSanitize, uiRouter, Common, Components, Filters, angularUi, uiSelect, ngMap]).config(($locationProvider) => {
+import angularMoment from 'angular-moment';
+angular.module('app', [ngSanitize, uiRouter, Common, Components, Filters, angularUi, uiSelect, ngMap, angularMoment]).config(($locationProvider) => {
   "ngInject";
   // @see: https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions
   // #how-to-configure-your-server-to-work-with-html5mode
